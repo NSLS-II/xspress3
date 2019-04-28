@@ -9,6 +9,8 @@ include $(TOP)/configure/CONFIG
 PROD_NAME = xspress3App
 PROD_IOC_Linux  += $(PROD_NAME)
 
+USR_LDFLAGS_Linux += -no-pie
+
 DBD += $(PROD_NAME).dbd
 
 $(PROD_NAME)_DBD += xspress3Support.dbd
